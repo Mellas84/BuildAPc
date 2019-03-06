@@ -1,6 +1,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
-      xmlns:f="http://xmlns.jcp.org/jsf/core">
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
     <style>
         body {
             background-color: black;
@@ -9,13 +11,13 @@
             background-image: url("resources/images/COMP.jpg");
         } 
     </style>
-    <head>   
+    <h:head>   
         <title>ORDER CONFIRMED</title>
         <h1>ORDER CONFIRMED</h1>
         Your order is currently being handled. Thank you for using "BUILD A PC .COM"
-    </head>
-    <body>
-                <h:panelGrid columns="1" border ="1" cellpadding="10" cellspacing="1">
+    </h:head>
+    <h:body>
+        <h:panelGrid columns="1" border ="1" cellpadding="10" cellspacing="1">
             <h:column>
                 #{computerController.chassi}
             </h:column>
@@ -40,6 +42,16 @@
             <h:column>
                 #{computerController.price}:-
             </h:column>
+            <h:form>
+                <h:commandButton value="Place another order" action="index"/>
+                <h:commandButton value="Admin Settings" action="admin"/>
+            </h:form>
         </h:panelGrid>
-    </body>
+        
+        
+
+
+    </h:body>
+
 </html>
+

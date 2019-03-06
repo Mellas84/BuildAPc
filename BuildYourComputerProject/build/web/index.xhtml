@@ -4,101 +4,100 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:f="http://xmlns.jcp.org/jsf/core">
-      
+
     <style>
-body {
-        background-color: black;
-        font-size: 20px;
-        color: white;
-        background-image: url("resources/images/COMP.jpg");
-        
-    } 
+        body {
+            background-color: black;
+            font-size: 20px;
+            color: white;
+            background-image: url("resources/images/COMP.jpg");
+
+        } 
     </style>
 
     <h:head>
         <title>BUILD A PC</title>
         <h1> WELCOME TO BUILD A PC .COM</h1>
     </h:head>
-    
+
     <h:body>
-<h:form>
-           <h:panelGrid columns="1" border ="1" cellpadding="10" cellspacing="1">
-            <h:selectOneMenu value = "#{computerController.chassi}"> 
-                <h:outputLabel value="Chassi  "/>
-   <f:selectItem itemValue = "Svive Luna S100 / 399:-" itemLabel = "Svive Luna S100 Mid Tower / 399:-" /> 
-   <f:selectItem itemValue = "Fractal Focus G / 539:-" itemLabel = "Fractal Design Focus G Mid Tower / 539:-" /> 
-   <f:selectItem itemValue = "Phanteks Eclipse P400S / 990:-" itemLabel = "Phanteks Eclipse P400S Mid Tower / 990:-" /> 
-   <f:selectItem itemValue = "Corsair Crystal 570x / 1399:-" itemLabel = "Corsair Crystal 570x Mid Tower / 1399:-" /> 
-   <f:selectItem itemValue = "Fractal Define XL R2 / 1475:-" itemLabel = "Fractal Design Define XL R2 / 1475:-" /> 
-   <f:selectItem itemValue = "Corsair Graphite 780T / 1799:-" itemLabel = "Corsair Graphite 780T Big Tower / 1799:-" />
-</h:selectOneMenu>         
-        
-            <h:selectOneMenu value = "#{computerController.motherboard}"> 
-                <h:outputLabel value="Motherboard  "/>
-   <f:selectItem itemValue = "MSI B360 / 1099:-" itemLabel = "MSI B360 Gaming Plus, Socket-1151 / 1099:-" /> 
-   <f:selectItem itemValue = "MSI Z370-A / 1328:-" itemLabel = "MSI Z370-A Pro, Socket-1151 / 1328:-" /> 
-   <f:selectItem itemValue = "Gigabyte B450 / 1463:-" itemLabel = "Gigabyte B450 Aorus M, Socket-AM4 / 1463:-" /> 
-   <f:selectItem itemValue = "MSI MPG Z390 / 2290:-" itemLabel = "MSI MPG Z390 GAMING PRO CARBON, S-1151 / 2290:-" /> 
-</h:selectOneMenu>         
-        
-            <h:selectOneMenu value = "#{computerController.cpu}">               
-                <h:outputLabel value="CPU / Processor  "/>
-   <f:selectItem itemValue = "i5-8400 2.8GHz / 2199:-" itemLabel = "Intel Core i5-8400 2.8GHz / 2199:-" /> 
-   <f:selectItem itemValue = "i5-6600k Skylake 3.5GHz / 2769:-" itemLabel = "Intel Core i5-6600k Skylake 3.5GHz / 2769:-" /> 
-   <f:selectItem itemValue = "i5-9600K 3.7GHz / 3090:-" itemLabel = "Intel Core i5-9600K 3.7GHz / 3090:-" /> 
-   <f:selectItem itemValue = "i7-8700 3.2GHz / 3790:-" itemLabel = "Intel Core i7-8700 3.2GHz / 3790:-" /> 
-   <f:selectItem itemValue = "i7-6700K Skylake 4.0GHz / 4449:-" itemLabel = "Intel Core i7-6700K Skylake 4.0GHz / 4449:-" /> 
-   <f:selectItem itemValue = "i7-7700K Skylake 4.2GHz / 4749:-" itemLabel = "Intel Core i7-7700K Skylake 4.2GHz / 4749:-" /> 
-</h:selectOneMenu>         
-        
-            <h:selectOneMenu value = "#{computerController.gpu}">                
-                <h:outputLabel value="GPU / Graphicscard  "/>
-   <f:selectItem itemValue = "MSI Geforce GTX 1050 Ti 4GB / 2290:-" itemLabel = "MSI Geforce GTX 1050 Ti 4GB / 2290:-" /> 
-   <f:selectItem itemValue = "MSI GeForce GTX 1060 6GB / 3449:-" itemLabel = "MSI GeForce GTX 1060 6GB / 3449:-" /> 
-   <f:selectItem itemValue = "ASUS GeForce GTX 1070 8GB / 4990:-" itemLabel = "ASUS GeForce GTX 1070 8GB / 4990:-" /> 
-   <f:selectItem itemValue = "ASUS GeForce GTX 1080 8GB / 6890:-" itemLabel = "ASUS GeForce GTX 1080 8GB / 6890:-" /> 
-   <f:selectItem itemValue = "Gainward GeForce RTX 2070 8GB / 6190:-" itemLabel = "Gainward GeForce RTX 2070 8GB / 6190:-" /> 
-   <f:selectItem itemValue = "ASUS GeForce 2080 GTX 8GB / 8149:-" itemLabel = "ASUS GeForce 2080 GTX 8GB / 8149:-" /> 
-</h:selectOneMenu>         
-        
-            <h:selectOneMenu value = "#{computerController.psu}">                
-                <h:outputLabel value="PSU / Power Supply  "/>
-   <f:selectItem itemValue = "CM MasterWatt 600W / 599:-" itemLabel = "Cooler Master MasterWatt Lite 600W / 599:-" /> 
-   <f:selectItem itemValue = "CM MasterWatt 650W / 990:-" itemLabel = "Cooler Master MasterWatt 650W / 990:-" /> 
-   <f:selectItem itemValue = "Seasonic Focus+ 750W / 1349:-" itemLabel = "Seasonic Focus+ 750W / 1349:-" /> 
-   <f:selectItem itemValue = "Corsair TX850M 850W / 1499:-" itemLabel = "Corsair TX850M 850W / 1499:-" /> 
-</h:selectOneMenu>         
-        
-            <h:selectOneMenu value = "#{computerController.ssd}"> 
-                <h:outputLabel value="SSD / Harddrive  "/>
-   <f:selectItem itemValue = "BX500 240GB SSD / 529:-" itemLabel = "Crucial BX500 240GB SSD / 529:-" /> 
-   <f:selectItem itemValue = "MX500 500GB SSD / 1049:-" itemLabel = "Crucial MX500 500GB SSD / 1049:-" /> 
-   <f:selectItem itemValue = "MX500 1TB SSD / 949:-" itemLabel = "Crucial MX500 1TB SSD / 949:-" /> 
-   <f:selectItem itemValue = "MX500 2TB SSD / 3599:-" itemLabel = "Crucial MX500 2TB SSD / 3599:-" />
-</h:selectOneMenu>         
-        
-            <h:selectOneMenu value = "#{computerController.internalMemory}">                 
-                <h:outputLabel value="Internal Memory  "/>
-   <f:selectItem itemValue = "HyperX Fury DDR4 8GB / 782:-" itemLabel = "HyperX Fury DDR4 8GB 2666MHz / 782:-" /> 
-   <f:selectItem itemValue = "Crucial DDR3L 16GBB / 1549:-" itemLabel = "Crucial DDR3L 16GBB 1600MHz / 1549:-" /> 
-   <f:selectItem itemValue = "Corsair Vengence DDR4 16GB / 2899:-" itemLabel = "Corsair Vengence DDR4 16GB 3600MHz / 2899:-" /> 
-   <f:selectItem itemValue = "Corsair Vengeance DDR4 32GB / 3199:-" itemLabel = "Corsair Vengeance DDR4 32GB 3200MHz / 3199:-" />  
-</h:selectOneMenu> 
-               
-   <h:column>    				
-      <f:facet name = "header">Price</f:facet>    
-      #{computerController.price}:-
-   </h:column>
-               </h:panelGrid>
-               <h:panelGrid columns="2" border ="1" cellpadding="10" cellspacing="1">
-                   
-               <h:commandButton value="Update Price" action="#{computerController.getTotalPrice()}"/>
-               <h:commandButton value="Submit" action="confirm">
-                   <f:actionListener binding="#{computerController.submit()}"/>
-               </h:commandButton>
-               
-           </h:panelGrid>
+        <h:form>
+            <h:panelGrid columns="1" border ="1" cellpadding="10" cellspacing="1">
+                <h:selectOneMenu value = "#{computerController.chassi}"> 
+                    <h:outputLabel value="Chassi  "/>
+                    <f:selectItem itemValue = "Svive Luna S100 / 399:-" itemLabel = "Svive Luna S100 Mid Tower / 399:-" /> 
+                    <f:selectItem itemValue = "Fractal Focus G / 539:-" itemLabel = "Fractal Design Focus G Mid Tower / 539:-" /> 
+                    <f:selectItem itemValue = "Phanteks Eclipse P400S / 990:-" itemLabel = "Phanteks Eclipse P400S Mid Tower / 990:-" /> 
+                    <f:selectItem itemValue = "Corsair Crystal 570x / 1399:-" itemLabel = "Corsair Crystal 570x Mid Tower / 1399:-" /> 
+                    <f:selectItem itemValue = "Fractal Define XL R2 / 1475:-" itemLabel = "Fractal Design Define XL R2 / 1475:-" /> 
+                    <f:selectItem itemValue = "Corsair Graphite 780T / 1799:-" itemLabel = "Corsair Graphite 780T Big Tower / 1799:-" />
+                </h:selectOneMenu>         
+
+                <h:selectOneMenu value = "#{computerController.motherboard}"> 
+                    <h:outputLabel value="Motherboard  "/>
+                    <f:selectItem itemValue = "MSI B360 / 1099:-" itemLabel = "MSI B360 Gaming Plus, Socket-1151 / 1099:-" /> 
+                    <f:selectItem itemValue = "MSI Z370-A / 1328:-" itemLabel = "MSI Z370-A Pro, Socket-1151 / 1328:-" /> 
+                    <f:selectItem itemValue = "Gigabyte B450 / 1463:-" itemLabel = "Gigabyte B450 Aorus M, Socket-AM4 / 1463:-" /> 
+                    <f:selectItem itemValue = "MSI MPG Z390 / 2290:-" itemLabel = "MSI MPG Z390 GAMING PRO CARBON, S-1151 / 2290:-" /> 
+                </h:selectOneMenu>         
+
+                <h:selectOneMenu value = "#{computerController.cpu}">               
+                    <h:outputLabel value="CPU / Processor  "/>
+                    <f:selectItem itemValue = "i5-8400 2.8GHz / 2199:-" itemLabel = "Intel Core i5-8400 2.8GHz / 2199:-" /> 
+                    <f:selectItem itemValue = "i5-6600k Skylake 3.5GHz / 2769:-" itemLabel = "Intel Core i5-6600k Skylake 3.5GHz / 2769:-" /> 
+                    <f:selectItem itemValue = "i5-9600K 3.7GHz / 3090:-" itemLabel = "Intel Core i5-9600K 3.7GHz / 3090:-" /> 
+                    <f:selectItem itemValue = "i7-8700 3.2GHz / 3790:-" itemLabel = "Intel Core i7-8700 3.2GHz / 3790:-" /> 
+                    <f:selectItem itemValue = "i7-6700K Skylake 4.0GHz / 4449:-" itemLabel = "Intel Core i7-6700K Skylake 4.0GHz / 4449:-" /> 
+                    <f:selectItem itemValue = "i7-7700K Skylake 4.2GHz / 4749:-" itemLabel = "Intel Core i7-7700K Skylake 4.2GHz / 4749:-" /> 
+                </h:selectOneMenu>         
+
+                <h:selectOneMenu value = "#{computerController.gpu}">                
+                    <h:outputLabel value="GPU / Graphicscard  "/>
+                    <f:selectItem itemValue = "MSI Geforce GTX 1050 Ti 4GB / 2290:-" itemLabel = "MSI Geforce GTX 1050 Ti 4GB / 2290:-" /> 
+                    <f:selectItem itemValue = "MSI GeForce GTX 1060 6GB / 3449:-" itemLabel = "MSI GeForce GTX 1060 6GB / 3449:-" /> 
+                    <f:selectItem itemValue = "ASUS GeForce GTX 1070 8GB / 4990:-" itemLabel = "ASUS GeForce GTX 1070 8GB / 4990:-" /> 
+                    <f:selectItem itemValue = "ASUS GeForce GTX 1080 8GB / 6890:-" itemLabel = "ASUS GeForce GTX 1080 8GB / 6890:-" /> 
+                    <f:selectItem itemValue = "Gainward GeForce RTX 2070 8GB / 6190:-" itemLabel = "Gainward GeForce RTX 2070 8GB / 6190:-" /> 
+                    <f:selectItem itemValue = "ASUS GeForce 2080 GTX 8GB / 8149:-" itemLabel = "ASUS GeForce 2080 GTX 8GB / 8149:-" /> 
+                </h:selectOneMenu>         
+
+                <h:selectOneMenu value = "#{computerController.psu}">                
+                    <h:outputLabel value="PSU / Power Supply  "/>
+                    <f:selectItem itemValue = "CM MasterWatt 600W / 599:-" itemLabel = "Cooler Master MasterWatt Lite 600W / 599:-" /> 
+                    <f:selectItem itemValue = "CM MasterWatt 650W / 990:-" itemLabel = "Cooler Master MasterWatt 650W / 990:-" /> 
+                    <f:selectItem itemValue = "Seasonic Focus+ 750W / 1349:-" itemLabel = "Seasonic Focus+ 750W / 1349:-" /> 
+                    <f:selectItem itemValue = "Corsair TX850M 850W / 1499:-" itemLabel = "Corsair TX850M 850W / 1499:-" /> 
+                </h:selectOneMenu>         
+
+                <h:selectOneMenu value = "#{computerController.ssd}"> 
+                    <h:outputLabel value="SSD / Harddrive  "/>
+                    <f:selectItem itemValue = "BX500 240GB SSD / 529:-" itemLabel = "Crucial BX500 240GB SSD / 529:-" /> 
+                    <f:selectItem itemValue = "MX500 500GB SSD / 1049:-" itemLabel = "Crucial MX500 500GB SSD / 1049:-" /> 
+                    <f:selectItem itemValue = "MX500 1TB SSD / 949:-" itemLabel = "Crucial MX500 1TB SSD / 949:-" /> 
+                    <f:selectItem itemValue = "MX500 2TB SSD / 3599:-" itemLabel = "Crucial MX500 2TB SSD / 3599:-" />
+                </h:selectOneMenu>         
+
+                <h:selectOneMenu value = "#{computerController.internalMemory}">                 
+                    <h:outputLabel value="Internal Memory  "/>
+                    <f:selectItem itemValue = "HyperX Fury DDR4 8GB / 782:-" itemLabel = "HyperX Fury DDR4 8GB 2666MHz / 782:-" /> 
+                    <f:selectItem itemValue = "Crucial DDR3L 16GBB / 1549:-" itemLabel = "Crucial DDR3L 16GBB 1600MHz / 1549:-" /> 
+                    <f:selectItem itemValue = "Corsair Vengence DDR4 16GB / 2899:-" itemLabel = "Corsair Vengence DDR4 16GB 3600MHz / 2899:-" /> 
+                    <f:selectItem itemValue = "Corsair Vengeance DDR4 32GB / 3199:-" itemLabel = "Corsair Vengeance DDR4 32GB 3200MHz / 3199:-" />  
+                </h:selectOneMenu> 
+
+                <h:column>    				
+                    <f:facet name = "header">Price</f:facet>    
+                    #{computerController.price}:-
+                </h:column>
+            </h:panelGrid>
+            <h:panelGrid columns="2" border ="1" cellpadding="10" cellspacing="1">
+                <h:commandButton value="Update Price" action="#{computerController.getTotalPrice()}"/>
+                <h:commandButton value="Submit" action="confirm">
+                    <f:actionListener binding="#{computerController.submit()}"/>
+                </h:commandButton>
+
+            </h:panelGrid>
         </h:form>
     </h:body>
-    
+
 </html>
