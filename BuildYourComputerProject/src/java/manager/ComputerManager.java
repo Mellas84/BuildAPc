@@ -22,8 +22,8 @@ public class ComputerManager {
         em.merge(c);
     }
     
-    public void deleteComputer(Computer c) {
-        em.remove(em.merge(c));
+    public void deleteComputer(Long id) {
+        em.remove(em.find(Computer.class, id));
     }
     
     public List<Computer> getAllComputers() {
@@ -31,7 +31,11 @@ public class ComputerManager {
        return q.getResultList();
     }
     
-    public Computer getComputer(Integer id) {
+    public Computer getComputer(Long id) {
         return em.find(Computer.class, id);
+    }
+    
+    public void setEm(EntityManager em) {
+        this.em = em;
     }
 }

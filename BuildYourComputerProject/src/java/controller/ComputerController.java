@@ -2,6 +2,7 @@ package controller;
 
 import entity.Computer;
 import java.util.List;
+import javax.annotation.PostConstruct;
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -24,6 +25,11 @@ public class ComputerController {
     private double price;
     private List<Computer> allComputers;
 
+    @PostConstruct
+    public void fillArray() {
+        this.allComputers = cm.getAllComputers();
+    }
+    
     public void submit() {
         getTotalPrice();
         getRefinedStrings();

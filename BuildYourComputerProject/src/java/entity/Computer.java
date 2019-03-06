@@ -2,6 +2,7 @@
 package entity;
 
 import java.io.Serializable;
+import java.util.List;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -26,7 +27,9 @@ public class Computer implements Serializable {
     private String motherboard;
     private String internalMemory;
     private double price;
+    private List<Computer> allComputers;
 
+    
     
     public Computer() {
         
@@ -44,6 +47,14 @@ public class Computer implements Serializable {
      
     }
 
+    public List<Computer> getAllComputers() {
+        return allComputers;
+    }
+
+    public void setAllComputers(List<Computer> allComputers) {
+        this.allComputers = allComputers;
+    }
+    
     public String getInternalMemory() {
         return internalMemory;
     }
