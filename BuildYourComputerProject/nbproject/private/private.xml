@@ -3,9 +3,8 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/melin/OneDrive/Dokument/NetBeansProjects/BuildYourComputerProject/src/java/entity/Computer.java</file>
             <file>file:/C:/Users/melin/OneDrive/Dokument/NetBeansProjects/BuildYourComputerProject/web/admin.xhtml</file>
-            <file>file:/C:/Users/melin/OneDrive/Dokument/NetBeansProjects/BuildYourComputerProject/src/java/manager/ComputerManager.java</file>
+            <file>file:/C:/Users/melin/OneDrive/Dokument/NetBeansProjects/BuildYourComputerProject/src/java/service/ComputerFacadeREST.java</file>
             <file>file:/C:/Users/melin/OneDrive/Dokument/NetBeansProjects/BuildYourComputerProject/web/index.xhtml</file>
             <file>file:/C:/Users/melin/OneDrive/Dokument/NetBeansProjects/BuildYourComputerProject/web/confirm.xhtml</file>
             <file>file:/C:/Users/melin/OneDrive/Dokument/NetBeansProjects/BuildYourComputerProject/src/java/controller/ComputerController.java</file>

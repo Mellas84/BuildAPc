@@ -49,8 +49,8 @@ public class ComputerFacadeREST {
 
     @DELETE
     @Path("{id}")
-    public void removePizza(@PathParam("id") Long id) {
-        cm.deleteComputer(id);
+    public void removePizza(@PathParam("id") Computer c) {
+        cm.deleteComputer(c);
     }
 
 }

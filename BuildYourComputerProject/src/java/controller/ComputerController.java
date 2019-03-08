@@ -29,6 +29,11 @@ public class ComputerController {
     public void fillArray() {
         this.allComputers = cm.getAllComputers();
     }
+    
+    public String deleteAction(Computer c) {
+        cm.deleteComputer(c);
+        return null;
+    }
 
     public void submit() {
         getTotalPrice();

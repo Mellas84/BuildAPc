@@ -11,13 +11,13 @@
             font-size: 20px;
             color: white;
             background-image: url("resources/images/COMP.jpg");
-
         } 
     </style>
 
     <h:head>
         <title>BUILD A PC</title>
         <h1> WELCOME TO BUILD A PC .COM</h1>
+        WEB PROJECT BUILT BY CHRILLE AND ARVID
     </h:head>
 
     <h:body>
@@ -90,14 +90,13 @@
                     #{computerController.price}:-
                 </h:column>
             </h:panelGrid>
-            <h:panelGrid columns="2" border ="1" cellpadding="10" cellspacing="1">
+            <h:panelGrid columns="3" border ="1" cellpadding="10" cellspacing="1">
+                <h:commandButton value="Admin Settings" action="admin"/>
                 <h:commandButton value="Update Price" action="#{computerController.getTotalPrice()}"/>
                 <h:commandButton value="Submit" action="confirm">
                     <f:actionListener binding="#{computerController.submit()}"/>
                 </h:commandButton>
-
             </h:panelGrid>
         </h:form>
     </h:body>
-
 </html>
